@@ -1,0 +1,36 @@
+// layout.scss
+
+.chat-container {
+  background-color: $container-bg-dark;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  body.light-mode & {
+    background-color: $container-bg-light;
+  }
+}
+
+#chat-window {
+  background-color: $background-light;
+  color: $text-dark;
+  padding: 10px;
+  border-radius: 5px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  text-align: left;
+
+  body.light-mode & {
+    background-color: $background-dark;
+    color: $text-light;
+  }
+}
+
+.input-area {
+  display: flex;
+}

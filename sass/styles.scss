@@ -1,0 +1,65 @@
+// styles.scss
+
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'components';
+@import 'footer';
+
+// Media Queries for Responsiveness
+@media (max-width: 1200px) {
+  .chat-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #chat-input {
+    width: calc(100% - 90px);
+  }
+
+  #send-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .chat-container {
+    padding: 10px;
+  }
+
+  #chat-input {
+    width: calc(100% - 80px);
+  }
+
+  #send-button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+
+  .dark-mode-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}

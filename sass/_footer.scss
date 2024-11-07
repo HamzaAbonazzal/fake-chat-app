@@ -1,0 +1,14 @@
+// footer.scss
+
+#footer {
+  background-color: $container-bg-dark;
+  color: $text-dark;
+  padding: 10px;
+  width: 98%;
+  text-align: center;
+
+  body.light-mode & {
+    background-color: $container-bg-light;
+    color: $text-light;
+  }
+}
